@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DAT Load Sender</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --success: #10b981;
+            --danger: #ef4444;
+            --gray: #6b7280;
+            --light: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        body {
+            width: 320px;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--light);
+            color: #1e293b;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin: 0 0 8px 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            color: var(--gray);
+            margin-top: 4px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        #startBtn {
+            background: var(--primary);
+            color: white;
+        }
+
+        #startBtn:hover:not(:disabled) {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        #stopBtn {
+            background: var(--danger);
+            color: white;
+        }
+
+        #stopBtn:hover {
+            background: #dc2626;
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+
+        .progress-container {
+            background: #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 10px;
+            margin: 16px 0;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: var(--success);
+            transition: width 0.4s ease;
+            border-radius: 8px;
+        }
+
+        #status {
+            font-size: 13px;
+            text-align: center;
+            color: var(--gray);
+            min-height: 20px;
+            padding: 8px 0;
+        }
+
+        .stats {
+            font-size: 12px;
+            color: var(--gray);
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        .icon {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h3>DAT Load Sender</h3>
+        <div class="subtitle">Ultimate 2025 • Live JSON + Trip + Total Miles</div>
+    </div>
+
+    <div class="controls">
+        <button id="startBtn">
+            <span class="icon">Rocket</span> Start Scraping
+        </button>
+        <button id="stopBtn" disabled>
+            <span class="icon">Stop Sign</span> Stop
+        </button>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div id="status">Ready to scrape loads</div>
+    <div class="stats" id="stats">Found: 0 | Processed: 0</div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
