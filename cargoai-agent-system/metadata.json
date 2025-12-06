@@ -1,0 +1,7 @@
+{
+  "name": "CargoAI Agent System",
+  "description": "A smart logistics dashboard featuring AI-driven cargo filtering and real-time voice negotiation agents.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

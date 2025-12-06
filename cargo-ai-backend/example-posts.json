@@ -1,0 +1,37 @@
+[
+  {
+    "No": 1,
+    "Origin": "Aurora, IL",
+    "Destination": "Fairburn, GA",
+    "Trip_Miles": "768",
+    "Total_Miles": 792,
+    "Rate": "$2,500",
+    "Company": "Traffix",
+    "Phone": "(312) 815-8364",
+    "Email": "syali@traffix.com",
+    "Truck": "Van w/Team",
+    "Commodity": "–",
+    "Reference_ID": "–",
+    "MC_Number": "211991",
+    "DH-O": "24",
+    "DH-D": "N/A"
+  },
+  {
+    "No": 2,
+    "Origin": "Los Angeles, CA",
+    "Destination": "New York, NY",
+    "Trip_Miles": "2800",
+    "Total_Miles": 2850,
+    "Rate": "$4,200",
+    "Company": "ABC Logistics",
+    "Phone": "(555) 123-4567",
+    "Email": "contact@abclogistics.com",
+    "Truck": "Dry Van",
+    "Commodity": "General Freight",
+    "Reference_ID": "REF-1234",
+    "MC_Number": "123456",
+    "DH-O": "50",
+    "DH-D": "N/A"
+  }
+]
+
